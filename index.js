@@ -21,18 +21,18 @@ app.post('/api/sendmail',(req,res)=>{
      var transporter = nodemailer.createTransport({
         service:'gmail',
         auth:{
-            user:'akhilku@gmail.com',
-            pass:'klo1auakhil404'
+            user:'wishesfor2022@gmail.com',
+            pass:'9809903485'
         }
     });
 
     var mailOptions = {
-        from: 'akhilku@gmail.com',
+        from: 'wishesfor2022@gmail.com',
         to: email,
         subject:'Happy 2022',
         text:`Hi...${name}, ${name1} send you 2022 wishes`,
         html: `Hi...${name}, ${name1} send you 2022 wishes,
-        <p>Click here to know more <a href="https://wishing-app-for-everyone.herokuapp.com/greeting">here</a><p/>`
+        <p>Click here to know more <a href="https://happy-22.herokuapp.com/">here</a><p/>`
     };
  
     transporter.sendMail(mailOptions,function(error,info){
