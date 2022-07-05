@@ -27,7 +27,7 @@ app.post('/api/sendmail',(req,res)=>{
     });
 
     var mailOptions = {
-        from: 'sruthigopinath42@gmail.com',
+        from: 'akhilku@gmail.com',
         to: email,
         subject:'Happy 2022',
         text:`Hi...${name}, ${name1} send you 2022 wishes`,
